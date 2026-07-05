@@ -10,7 +10,7 @@ def create (db: Session, sandwich):
 
     db.add(db_sandwich)
     db.commit()
-    db.refresh(sandwich)
+    db.refresh(db_sandwich)
     return db_sandwich
 
 def read_all(db: Session):
